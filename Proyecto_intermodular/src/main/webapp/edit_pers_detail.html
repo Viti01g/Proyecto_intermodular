@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/edit_pers_detail.css">
+	<title>Editar Detalle de Persona</title>
+</head>
+<body>
+	<header>
+		<h1>Editar Detalle de Persona</h1>
+	</header>
+	<main>
+		<form id="editarPersonaForm" name="Edit_usuario" action="gest_Emple" method="post">
+			<input type="hidden" id="id" name="id">
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" required>
+			<label for="primerApellido">Primer Apellido:</label>
+			<input type="text" id="apellido_1" name="apellido_1" required>
+			<label for="segundoApellido">Segundo Apellido:</label>
+			<input type="text" id="apellido_2" name="apellido_2">
+			<label for="dni">DNI:</label>
+			<input type="text" id="dni" name="dni" required>
+			<label for="cargo">Cargo:</label>
+			<select id="cargo" name="cargo" required>
+				<option value="Gerente">Gerente</option>
+				<option value="Subgerente">Subgerente</option>
+				<option value="Empleado">Empleado</option>
+				<option value="Asistente">Asistente</option>
+			</select>
+			<label for="sexo">Sexo:</label>
+			<select id="sexo" name="sexo" required>
+				<option value="Masculino">Masculino</option>
+				<option value="Femenino">Femenino</option>
+				<option value="Otro">Otro</option>
+			</select>
+			<button type="submit">Actualizar Persona</button>
+		</form>
+		<div class="back-button">
+			<a href="edit_pers.html">Volver a Editar Personas</a>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2024 Gestión de Personas</p>
+	</footer>
+	<script src="js/edit_pers_detail.js"></script>
+</body>
+</html>
